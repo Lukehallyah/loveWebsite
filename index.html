@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love you Baby</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+
+<style>
+      #password-gate {
+        text-align: center;
+        padding: 2rem;
+        font-family: Arial, sans-serif;
+      }
+      #error {
+        color: red;
+        margin-top: 1rem;
+      }
+      #content {
+        display: none;
+        
+      }
+    </style>
+</head>
+<body>
+
+  <div id="password-gate">
+    <h2>Please enter password to continue</h2>
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="checkPassword()">Submit</button>
+    <p id="error"></p>
+  </div>
+  
+    <div id="content">
+        <header>
+            <h1>To my Baby</h1>
+            <h2>My Entire World</h2>
+            <h3>If nobody has told you today...</h3>
+        </header>
+        <main>
+            <div class="box2">
+                <p>You are gorgeous in every way...</p>
+                <p>Maybe you can't see, just how <span class="bold">irresistible</span> you truly are</p>
+                <p>If only you could look through my eyes for a moment...</p>
+            </div>
+            <div class="box3">
+                <p>Maybe you look at yourself and wonder</p>
+                <p>what makes you special, what makes you beautiful po</p>
+            </div>
+            <div class="box4">
+                <h3>Even Though...</h3>
+                <p>Your eyes are striking, <span class="bold">making my heart beat faster!</span></p>
+                <p>Baby your voice makes my heart melt, I crave your sultry playful voice chuuu</p>
+                <p>Your skin is soft and gorgeous, looking at you I am breathless baby</p>
+                <p>Keeping clean thoughts po, your body is perfect baby</p>
+                <p>The way you move is <span class="bold">mesmerizing!</span></p>
+                <p>Every single inch of you is <span class="bold">perfect</span> to me</p>
+                <p>No one could ever compare to your beauty!</p>
+                <p>You are my Baby, my eyes are fixed on you!</p>
+                <p>I adore you my gwapa prinsesa...</p>
+            </div>
+            <div class="box5">
+                <h3>Even Though all these are true baby, and so much more</h3>
+                <p>Always remember my Gwapa Prinsesa</p>
+                <p>My pretty pretty Baby</p>
+                <p>My Beautiful Binibini</p>
+                <p>My Love of my Life...</p>
+            </div>
+            <div class="box6">
+                <h2>It was your heart, your soul that I fell in love with all those years ago</h2>
+                <p>Your words that came from your heart baby</p>
+                <p>The way we talk and play together</p>
+                <p>The way you make me laugh after a hard day's work</p>
+                <p>The feeling of missing you and praying and crying to God to hold you in my arms...</p>
+                <p>It was the way you <span class="bold">never give up</span></p>
+                <p>Baby it's the way you <span class="bold">always</span> keep trying</p>
+                <p>Your notes baby</p>
+                <p>The sleepiness in your voice when you're sleepy <span class="bold">It's so cute!!</span></p>
+                <h3>The reason I love you, and fall in love with you more and more each day, is who you are inside my beautiful Wifey!</h3>
+            </div>
+            <div class="box7">
+                <h2>Chuuuuu</h2>
+                <p>You don't have to always be strong</p>
+                <p>Baby you don't have to always seem happy for me to love you</p>
+                <p>and find you completely adorable!</p>
+                <p>You're already strong baby, I'm proud of you po chu</p>
+                <p>Trying your best every day</p>
+                <p>Even when it's hard</p>
+                <p>When it's not easy</p>
+                <p><span class="bold">When you have so much on your shoulders chu!</span></p>
+                <p>You <span class="bold">being you</span> every day makes me fall in love more and more with you</p>
+                <p>You are my baby, my love of my life</p>
+                <h4>and I love you no matter what my love!</h4>
+            </div>
+            <div class="box8">
+                <h1>All of this to Say chuu....</h1>
+            </div>
+            <div class="final">
+                <h3>I love you my Gwapa Prinsesa😘❤️🤍</h3>
+                <h3>I love you my Beautiful Binibini😘❤️</h3>
+                <h3>I love you my lovely Ilongga Tulip😘🌷 </h3>
+                <p>You have a beautiful heart, you are strong I know baby,
+                    and I know there's so many changes baby and it's scary pooo
+                </p>
+                <p>No matter what</p>
+                <p>We have each other</p>
+                <p>I will always always always be yours baby</p>
+                <p>Until my dying breath and forever and always</p>
+                <h3>I love you my Beautiful Wifey I love you so much!😘❤️💕🤍🤍</h3>
+            </div>
+        </main>
+    </div>
+
+    <script>
+    const correctPassword = "youandmebaby"; // CHANGE this to your password
+
+    function checkPassword() {
+      const input = document.getElementById("password").value;
+      const error = document.getElementById("error");
+      const content = document.getElementById("content");
+      const gate = document.getElementById("password-gate");
+
+      if (input === correctPassword) {
+        error.textContent = "";
+        gate.style.display = "none";
+        content.style.display = "block";
+      } else {
+        error.textContent = "Incorrect password. Try again.";
+      }
+    }
+  </script>   
+</body>
+</html>
